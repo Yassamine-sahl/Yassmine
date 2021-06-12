@@ -15,6 +15,10 @@ const users=[...Array(20)].map((user)=>({
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
+    return queryInterface.bulkInsert('Users', users, {});
+     
+    
+    
     /**
      * Add seed commands here.
      *
