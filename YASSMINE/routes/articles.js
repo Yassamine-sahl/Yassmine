@@ -1,7 +1,8 @@
 const router = require('express').Router();
 const commsRepo = require('../repositories/comments')
 const articleRepo = require('../repositories/articles')
-/* GET users listing. */
+
+
 router.get('/', async function(req, res, next) {
   res.send(await articleRepo.getArticles())
 });
