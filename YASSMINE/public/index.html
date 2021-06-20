@@ -110,7 +110,7 @@
     <h1>Welcome to the blog</h1>
     <small class="text-center text-muted">This is my blog</small>
     <hr class="w-50">
-
+     
     <div align="left" class="tab-content" id="pills-tabContent">
       <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
         <div class="container">
@@ -151,18 +151,19 @@
         <div class="m-3">
           <div class="row row-cols-lg-auto g-3 align-items-center">
             <div class="col-auto">
-              <input class="form-control" placeholder="Enter id" type="text" id="id"/>
+              <input class="form-control form-control-lg" placeholder="Enter id" type="text" id="id"/>
             </div>
             <div class="col-auto">
-              <button class="btn btn-danger m-3" onclick="getUser()">Search <i class="fas fa-search"></i></button>
+              <button class="btn btn-primary m-3" onclick="getUser()">Search <i class="fas fa-search"></i></button>
             </div>
             <div class="col-auto">
               <button class="btn btn-outline-primary" onclick="getUsers(); this.onclick=null;">Display all USERS</button>
             </div>
           </div>
           <div id="data"></div>
-          <table align="center" style="display: none;" id="matable" class="w-75 table table-striped table-hover">
-            <thead>
+         
+          <table align="center" style="display: none;" id="matable" class="w-75 table table-success table-striped">
+            <thead class="table-dark">
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">username</th>
